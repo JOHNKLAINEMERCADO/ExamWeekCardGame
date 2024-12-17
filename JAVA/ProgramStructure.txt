@@ -1,0 +1,87 @@
+Main Menu
+- 
+
+
+
+
+
+stage section
+character:
+mp(initial)(stress)(green)
+fp(initial)(perturn)(blue)
+
+enemy:
+no.(preset)
+progress(red)
+stress(purple)
+difficulty(pink)
+
+stage:
+time bar(no. of cards played
+turn num
+
+history section
+turn no.
+time record
+action
+
+action interface section
+cards:
+input num
+code num
+card info
+
+Interactions
+Enemy-progress, stress, difficulty increased by cards-cardinfo
+Enemy no. is predefined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+User inputs
+Main Menu:
+1New game -> 2select deck->|(stage)
+             2newdeck-> 3add card ->3
+		                3Remove cards ->3
+		                3Save deck-> 2
+		                3cancel-> 2
+             2back to menu ->  1
+1Load game-> 4select game -> |(stage)
+			 4back to menu-> 1
+1Game history-> 5exit-> 1
+
+
+stage:
+	1select card-> 1
+	1save game-> 2confirm->|(Main Menu)
+			2cancel-> 1
+	1exit game-> 2confirm->|(Main Menu)
+			2cancel-> 1
+
+
+Extra changes in screen: 
+game finish:
+	1See action history->2back-> 1
+	1exit->|(Main Menu)
+Input error:
+	1confirm->|(previous screen)
+
+
+a -card- is an -object- of the -Actions class-
+a -deck- is a -list- of -cards-
+-saveddecks- is a -list- of -decks-
+
+saveddecks is created and accessed in mainmenu
+cards are created in Actions
+decks are created in mainmenu
